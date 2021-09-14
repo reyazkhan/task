@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive !important;
+
+}
+// body{
+//   font-family: 'Comfortaa', cursive !important;
+// }
+
+html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a {
+  text-decoration:none
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul > li {
+
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.row{
+  margin: 0 ;
+  padding: 0 ;
+}
+p{
+  margin: 0;
+  padding: 0;
+}

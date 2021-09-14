@@ -1,0 +1,32 @@
+.tab-div{
+  ul > li
+  {
+    line-height: 45px;
+    // display: grid;
+    display: flex;
+    a.active{
+      background-color: rgb(75, 71, 71);
+      color: white;
+      display: flex;
+      // justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+    a{
+      display: flex;
+      // justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      color:black;
+    }
+  }
+}
+
+li > a
+{
+  img{
+    height:25px;
+    display: flex;
+    margin: 0 20px;
+  }
+}

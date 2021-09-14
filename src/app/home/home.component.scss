@@ -1,0 +1,249 @@
+.parent-div{
+  display: flex;
+  height:100%;
+}
+.left-navigation-container{
+  width:20%;
+}
+
+.home-container{
+  background: #f7f4f4;
+  width:100%;
+  padding: 30px;
+}
+.bg{
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #c6b9b9;
+  .pay-recharge-container
+  {
+    img{
+      height: 25px;
+    }
+  }
+}
+.pay-recharge-container{
+  margin: 30px 200px;
+  display: flex;
+  justify-content:space-evenly;
+  .img-div{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-wrap{
+    display: flex;
+    button{
+      width: 110px;
+      border: none;
+    }
+  }
+}
+.active-img{
+  background: #615f5c;
+}
+.unactive-img{
+  background: #eddede;
+}
+.active-btn{
+  // border-top-left-radius: 50px;
+  // border-bottom-left-radius: 50px;
+  // or
+  // border-radius: 0 0 0 50px;
+  border-radius: 25px 0px 0px 25px;
+  background: #615f5c;
+  color: #fff;
+  font-weight: bold;
+}
+.unactive-btn{
+  border-radius: 0px 25px 25px 0px;
+  font-weight: bold;
+
+}
+
+.searchbar{
+  .searchdiv{
+    border: 1px solid #dfd1d1;
+    display: flex;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    img{
+      height: 30px;
+      align-self: center;
+      margin: 0 20px 0 0;
+    }
+    input{
+      border: none;
+      width: 100%;
+      border-radius: 25px;
+      font-size: initial;
+      padding: 10px;
+      outline: none;
+    }
+  }
+}
+
+.vendors-container{
+  margin: 20px 0;
+  border-bottom: 2px solid rgb(155, 150, 150);
+  padding: 0 0 20px 0;
+  .p-tag{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: small;
+  }
+  .vendors-array-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+  }
+}
+
+.vendors-array{
+  text-align: -webkit-center;
+  .img-tag{
+    width: 50px;
+    height: 50px;
+    background: #ebe7e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    img{
+      height:60%;
+    }
+  }
+  p{
+    font-size: smaller;
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    color: grey;
+  }
+}
+
+
+.star-container{
+  margin: 20px 0;
+  .p-tag{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: small;
+  }
+  .star-array-container{
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+    // padding: 0 10px;
+    // border-radius: 12px;
+    // box-shadow: 0px 0px 3px 1px #e9e1e1;
+    .design-container{
+      width: 45%;
+      padding: 0 10px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 3px 1px #e9e1e1;
+      .head{
+        font-size: smaller;
+      }
+      .img-div
+      {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        /* background-color: antiquewhite; */
+        border-radius: 25px;
+        display: flex;
+        box-shadow: 0px 0px 10px 1px #cac1c1;
+      }
+      .fav-icon-display{
+        display: flex;
+        .fav-icon{
+          img{
+            height: 15px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .below-text{
+        font-size: smaller;
+        display: flex;
+        margin: 10px 0 0 0;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.last-div{
+  height: 75px;
+  border-left: 2px solid;
+  align-self: center;
+}
+
+// .slick-slider {
+//   width: 90%;
+//   margin: auto;
+// }
+
+.small-div{
+  .slider-container{
+    background-color: #fff;
+    height: 170px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #c6b9b9;
+    .img-slider{
+      height: 130px;
+      width: 100%;
+    }
+  }
+}
+
+.card-container{
+  margin: 30px 0;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #c6b9b9;
+  .card-wallet{
+    display: flex;
+    justify-content:end;
+    margin: 10px 20px;
+    .btn-wallet{
+      border: none;
+      border-radius: 25px;
+      width: 100px;
+      height: 30px;
+      margin: 0 10px;
+      align-self: center;
+    }
+    .img-div
+    {
+      width: 40px;
+      height: 40px;
+      align-self: center;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      background: #e2ded7;
+      // box-shadow: 0px 0px 10px 1px #cac1c1;
+      img{
+        height:60%;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.cardImg{
+  margin: 10px 20px;
+  .card-below{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+}
