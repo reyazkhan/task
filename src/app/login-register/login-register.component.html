@@ -10,7 +10,7 @@
         <form [formGroup]="userLoginDetails" (ngSubmit)="userLoginDetails.valid ? userLogin() : '' ">
           <div class="form-group">
             <mat-form-field appearance="outline" style="width:100%">
-              <mat-label>Email / Mobile Number</mat-label>
+              <mat-label>Email or Mobile Number</mat-label>
               <input matInput placeholder="" formControlName="email">
               <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
               <!-- <mat-hint>Hint</mat-hint> -->
