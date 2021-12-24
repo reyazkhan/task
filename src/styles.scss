@@ -11,6 +11,11 @@ a{
   text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 // User List Page scss
 .parent-container{
   margin: 50px 100px;
@@ -48,4 +53,22 @@ ul{
 }
 .c-pointer{
   cursor: pointer;
+}
+
+.jc-space-btw{
+  align-items: center;
+  justify-content: space-between;
+}
+
+// input.ng-invalid{
+//   border: 1px solid red;
+// }
+// select.ng-invalid{
+//   border: 1px solid red;
+// }
+.has-error{
+  border: 1px solid red;
+}
+.error{
+  color: red;
 }

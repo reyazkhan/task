@@ -36,5 +36,8 @@ export class DbserviceService {
   {
     return this.httpClient.delete(this.url+"users/"+id,this.tokenPass());
   }
-
+  addUser(value:any)
+  {
+    return this.httpClient.post(this.url+"users",value,this.tokenPass());
+  }
 }

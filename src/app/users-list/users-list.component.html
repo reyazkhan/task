@@ -7,8 +7,9 @@
           </div>
     </div>
     <div *ngIf="loading==false">
-        <div>
+        <div class="d-flex jc-space-btw">
             <h1 class="link-secondary">Users List</h1>
+            <button type="button" class="btn btn-success" (click)="goToAddUser()">Add User</button>
         </div>
         <div class="row">
             <div class="col-md-12">

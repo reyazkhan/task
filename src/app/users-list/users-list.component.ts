@@ -70,6 +70,11 @@ export class UsersListComponent implements OnInit {
     })
   }
 
+  goToAddUser()
+  {
+    this.router.navigate(['/user_add']);
+  }
+
   page:any=1;
   getPageData(type:any)
   {

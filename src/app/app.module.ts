@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsersListComponent } from './users-list/users-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserEditComponent } from './user-edit/user-edit.component';
+import { UserAddComponent } from './user-add/user-add.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UserEditComponent } from './user-edit/user-edit.component';
     UsersListComponent,
     UserDetailsComponent,
     UserEditComponent,
+    UserAddComponent,
   ],
   imports: [
     BrowserModule,

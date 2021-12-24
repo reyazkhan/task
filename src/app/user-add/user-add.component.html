@@ -1,0 +1,66 @@
+<div class="parent-container">
+    <div class="loading" *ngIf="loading==true">
+        <div class="d-flex align-items-center">
+            <strong>Loading...</strong>
+            <div class="spinner-border ms-auto"></div>
+          </div>
+    </div>
+    <div>
+        <div>
+            <button type="button" class="btn btn-info" (click)="back()">Back</button>
+            
+            <h1 class="link-secondary">User Add Form</h1>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form [formGroup]="userAddForm" (submit)="addUser() ">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" formControlName="name" 
+                        [ngClass]="{'has-error':f.name.invalid && f.name.touched}">
+                        <span class="error" *ngIf="(f.name.invalid && f.name.touched)">
+                            Name is required *
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Email</label>
+                        <input type="text" class="form-control" name="email" formControlName="email" 
+                        [ngClass]="{'has-error':f.email.invalid && f.email.touched}">
+                        <span class="error" *ngIf="(f.email.invalid && f.email.touched)">
+                            Correct Pattern Email is required *
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Gender</label>
+                        <select class="form-select" name="gender" formControlName="gender" 
+                        [ngClass]="{'has-error':f.gender.invalid && f.gender.touched}">
+                            <option value="">Select Gender</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                        <span class="error" *ngIf="(f.gender.invalid && f.gender.touched)">
+                            Gender is required *
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Status</label>
+                        <select class="form-select" name="status" formControlName="status" 
+                        [ngClass]="{'has-error':f.status.invalid && f.status.touched}">
+                            <option value="">Select Status</option>
+                            <option value="active">active</option>
+                            <option value="inactive">inactive</option>
+                        </select>
+                        <span class="error" *ngIf="(f.status.invalid && f.status.touched)">
+                            Status is required *
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
