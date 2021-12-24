@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginRegisterComponent } from './login-register/login-register.component';
 import { AuthGuard } from './Services/AuthGuard/auth.guard';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 
 const routes: Routes = [
-  { path:'login',component:LoginRegisterComponent},
-  { path:'home',component:HomeComponent,canActivate:[AuthGuard]},
+  {path:'',component: UsersListComponent},
+  {path: 'user_details/:id',component:UserDetailsComponent},
+  {path: 'user_edit/:id',component:UserEditComponent},
 ];
 
 @NgModule({
